@@ -1,0 +1,405 @@
+@media only screen and (min-width: 830px) and (max-width: 1200px) {
+
+@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular-webfont.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+  font-family: OpenSans, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #111;
+}
+p {
+  font-size: 14px;
+  color: #111;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+section > .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: block;
+  padding: 30px 50px;
+}
+#banner {
+  padding: 20px 20px 0;
+  position: relative;
+}
+#banner img {
+  width: 100%;
+  height: auto;
+}
+#banner h1{
+  font-size: 24px;
+}
+#banner h3{
+ font-size: 16px;
+}
+.CV-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  z-index: 1000;
+  color: whitesmoke;
+  text-align: center;
+}
+/*-----Kết thúc phần #banner----------*/
+/*-----Bắt đầu phần #nav-bar----------*/
+
+#nav-bar {
+  text-align: center;
+  position: relative;
+}
+#nav-bar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#nav-bar .container a {
+  padding: 10px 20px;
+  text-transform: none;
+}
+
+.nav-bar-title h6, .nav-bar-title p{
+  visibility: hidden;
+}
+
+#nav-bar .container i {
+  color: lightseagreen;
+}
+.nav-bar-title {
+  display: inline-block;
+  align-content: center;
+}
+.avatar-frame {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid whitesmoke;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.avatar-frame img {
+  width: 100%;
+  height: auto;
+}
+
+/*-----Kết thúc phần #nav-bar----------*/
+/*-----Bắt đầu phần #about----------*/
+
+#about .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#target {
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-left: 80px;
+}
+
+#target h1{
+font-size: 24px;
+}
+#target p {
+  margin-top: 20px;
+}
+#personal-info {
+  padding-top: 40px;
+  padding-left: 20px;
+  background: #f2f2f2;
+}
+#personal-info input[type="email"]{
+  width: 80%;
+}
+#personal-info label{
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+#personal-info input[type="button"]{
+  width: 100px;
+  background-color: lightseagreen;
+  border: 1px solid transparent;
+  border-radius: 4px;
+} 
+
+#personal-info input[type="button"]:hover{
+  background-color: darkseagreen;
+}
+#personal-info input:focus{
+  outline: 1px solid lightseagreen;
+}
+#personal-info h1{
+  font-size: 24px;
+}
+#personal-info ul {
+  display: none;
+  margin-top: 20px;
+  list-style-type: none;
+}
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  display: none;
+}
+.social-icons i {
+  color: lightseagreen;
+}
+
+/*-----Kết thúc phần #about----------*/
+/*-----Bắt đầu phần #job-info----------*/
+#job-info .container .box {
+  position: relative;
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+#job-info .container .row{
+  row-gap: 20px;
+}
+
+.box i:first-child {
+  position: absolute;
+  font-size: 30px;
+  top: 20px;
+  right: 20px;
+}
+.box h5 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.box ul {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.box-experience span {
+  background-color: lightseagreen;
+  border-radius: 4px;
+  color: whitesmoke;
+}
+.line-color{
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: lightseagreen;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+.line-color2 {
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background: rgb(186, 185, 185);
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.hobby-icons {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-content: center;
+}
+.hobby-icons div {
+  width: 40px;
+  height: 40px;
+  border: 2px solid lightseagreen;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.hobby-icons div span {
+  color: lightseagreen;
+  line-height: 40px;
+}
+.hobby-icons p {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.box li {
+  position: relative;
+  list-style-type: none;
+}
+
+.box li::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: lightseagreen;
+  border: 2px solid orange;
+  border-radius: 50%;
+  top: 3px;
+  left: -15px;
+}
+.hidden{
+  display: none;
+}
+.viewmore{
+  width: 120px;
+  height: 40px;
+  background-color: lightseagreen;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: none;
+}
+.viewmore:hover{
+  width: 120px;
+  height: 40px;
+  background-color: darkseagreen;
+
+}
+.box:hover .viewmore{
+  display: block;
+}
+/*-----Kết thúc phần #job-info----------*/
+/*-----Bắt đầu phần #certificate----------*/
+
+.certificates {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+.certificates img {
+  width: 100%;
+  height: auto;
+}
+
+.cert_PRF h5,
+.cert_DBI h5{
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.cert_WEB h5{
+  font-size: 16px;
+  margin-top: 0;
+}
+.cert_line1,
+.cert_line2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cert_WEB,
+.cert_PRF,
+.cert_DBI {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border-bottom: 1px solid transparent;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+
+.border_left {
+  border-left: 1px solid #d6c08d;
+}
+
+.border_bottom {
+  border-bottom: 1px solid #d6c08d;
+}
+.padding_bottom {
+  padding-bottom: 20px;
+}
+
+/*-----Kết thúc phần #certificate----------*/
+/*-----Bắt đầu phần #project----------*/
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 20px;
+  margin-top: 40px;
+  font-size: 12px;
+}
+.projects img {
+  width: 100%;
+  height: auto;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto auto auto;
+}
+
+.projects h5 {
+  font-size: 18px;
+  padding: 15px;
+}
+.projects span {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.intro span:last-child{
+  display: block;
+  margin-left: 70px;
+}
+.table p,
+.projects h5,
+.intro {
+  border-bottom: 2px solid gray;
+  margin-bottom: 15px;
+}
+.table p {
+  padding-left: 10px;
+}
+.table p:last-child,
+.table p:nth-child(5) {
+  border-bottom: none;
+}
+.intro {
+  padding-bottom: 15px;
+}
+.year {
+  background-color: lightseagreen;
+  border-radius: 4px;
+  color: whitesmoke;
+}
+
+.special-border {
+  border: 1px solid gray;
+  padding-bottom: 20px;
+  height: 450px;
+}
+
+/*-----Kết thúc phần #project----------*/
+/*-----Bắt đầu phần #footer----------*/
+#footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  gap: 20px;
+}
+
+#footer .container i {
+  color: lightseagreen;
+  font-size: 25px;
+}
+}
